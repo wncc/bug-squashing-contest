@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Website Demo 2</title>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootswatchedited.css">
+    <link rel="stylesheet" href="position.css"
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script> 
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script> 
+      <script type="text/javascript">
+          $(document).ready(function () {
+              // fade in content.
+              $('#content-wrapper').fadeIn("slow");
+          });
+</script>
+ 
+<style type="text/css">
+ 
+#content-wrapper
+{
+	display:none;	
+}
+ 
+</style>
+
+  </head>
+  <body>
+   <script type="text/javascript">
+<!--       //--><![CDATA[//><!--
+       document.write('<div id="content-wrapper">');
+       //--><!]]>
+</script>
+  <div id="div1">
+   <div class="well">
+        <div class="row-fluid">
+            <div class="span3">
+              <h1 align="center"> Contest Name</h1>
+            </div>
+        </div>
+      </div>
+      <div class= "container-fluid">
+        <div class="row-fluid">
+            <div class= "span9"> 
+                <div id="div2">    
+                <form  name="Register" method="POST">
+                    <h5> <input type="text" style="height:50" placeholder="Gmail id"/>
+                    <input type="Checkbox"/ id="remember"/> Remember Me </br>
+                    <input type="password" style="height:50" placeholder="password" />
+                    <input type="Submit" class="btn-success" value="Sign In" />
+                    
+                    </h5>
+                </form>
+             </div>
+           </div>
+         </div>
+      </div>
+   </div>  
+   <div>
+    <div class="span3">
+        <ul class="nav nav-pills nav-stacked">
+            <li>
+                <a  data-toggle="pill" onclick="window.location.href='WebsiteDemo2.htm'"> <h3>Home </h3></a>
+            </li>
+            <li >
+                <a  data-toggle="pill" onclick="window.location.href='faq.html'"> <h3>FAQ</h3> </a>
+            </li>
+            <li class="active">
+                <a data-toggle="tab"> <h3> Contact Us </h3></a>
+            </li>
+        </ul>
+        
+    </div>
+   </div>
+   <div class="span12">
+    <div class="row-fluid" >
+        <div class="well">
+         <section id="About">
+            <div class="page-header">
+                <h1>Contact Details</h1>
+                <hr />
+            </div>
+            <h4>Akash Khan</br>
+                Email id: akashkhan25@gmail.com
+            </h4>
+            
+               
+         </section>
+        </div>
+    </div>
+   </div>
+    <section id="scoreboard">
+   <div >
+    <h2 align="center">Scoreboard</h2>
+    
+   <div class= "row">
+    <div class="span 3"
+        <div class="well" id="div4">
+            <ul class="nav nav-pills">
+            <li class="active"> <a href="#Overall" data-toggle="pill"><h3>Overall</h3></a></li>
+            <li> <a href="#Monthly" data-toggle="tab"><h3>Monthly</h3></a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="Overall">
+                 <ul class="nav nav-tabs nav-stacked" id="Overall">
+                    <table class="table">
+                        <li><thead><tr><th><h4>Rank</h4></th> <th> <h4>Username</h4></th> <th><h4>Issues Resolved</h4></th> </tr></thead></li>
+                    </table>
+                    <table class="table">
+                        <li> 
+                            <tr> <td>1</td> <td> <a href='#Profile1' data-toggle="tab" onclick="window.location='https://github.com'" > akash12</a></td> <td>5</td> </tr>
+                        </li>
+                        <li> 
+                            <tr> <td>2</td><td> <a href='#Profile2' data-toggle="tab" onclick="window.location='http://google.com'"> Bot</a></td> <td>3</td></tr></li>
+                    </table>
+                 </ul>
+                </div>
+                <div class="tab-pane" id="Monthly">
+                    <ul class="nav nav-tabs nav-stacked" id="Monthly">
+                        <table class="table">
+                            <li><thead><tr><th><h4>Rank</h4></th> <th> <h4>Username</h4></th> <th><h4>Issues Resolved</h4></th> </tr></thead></li>
+                        </table>
+                        <table class="table">
+                            <li> 
+                                <tr> <td>1</td> <td> <a href='#Profile1' data-toggle="tab" onclick="window.location='https://github.com'" > twit_bot</a></td> <td>2</td> </tr>
+                            </li>
+                            <li> 
+                                <tr> <td>2</td><td> <a href='#Profile2' data-toggle="tab" onclick="window.location='http://google.com'">Bot </a></td> <td>1</td></tr>
+                            </li>
+                        </table>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    </div>
+   </section>
+   <script type="text/javascript">
+<!--       //--><![CDATA[//><!--
+       document.write('</div><!-- content-wrapper -->');
+       //--><!]]>
+</script>
+   
+  </body>     
+</html>
