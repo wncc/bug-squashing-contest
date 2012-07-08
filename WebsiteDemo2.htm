@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title> Website Demo 2</title>
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootswatchedited.css">
-    <link rel="stylesheet" href="position.css">
+    <link rel="stylesheet" href="bootswatchedited.css">
+    <link rel="stylesheet" href="styles.css">
      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script> 
+    <script src="bootstrap.js"></script> 
     <script type="text/javascript">
         $(document).ready(function () {
             // fade in content.
@@ -19,7 +19,7 @@
             if (typeof window.janrain !== 'object') window.janrain = {};
             if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
 
-            janrain.settings.tokenUrl = 'WebsiteDemo2.htm';
+            janrain.settings.tokenUrl = 'REPLACE_WITH_TOKEN_URL';
 
             function isReady() { janrain.ready = true; };
             if (document.addEventListener) {
@@ -54,22 +54,7 @@
             </div>
         </div>
       </div>
-      <div class= "container-fluid">
-        <div class="row-fluid">
-            <div class= "span3"> 
-                <div id="div2">    
-                <form  name="Register" method="POST">
-                    <h5> <input type="text" style="height:50" placeholder="Gmail id"/>
-                    <input type="Checkbox"/ id="remember"> Remember Me
-                    <input type="password" style="height:50" placeholder="password" />
-                    <input type="Submit" class="btn-success" value="Sign In" />
-                   
-                    </h5>
-                </form>
-             </div>
-           </div>
-         </div>
-      </div>
+     
    </div>  
    <div>
     <div class="span3">
@@ -164,6 +149,7 @@
         </div>
     </div>
  </section>
-
+  <div class=span3 id="janrainEngageEmbed" 
+          style="position:relative;left:220px; top: 130px;">
   </body>     
 </html>

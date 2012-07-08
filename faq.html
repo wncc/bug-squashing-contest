@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <title> Website Demo 2</title>
     <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootswatchedited.css">
-    <link rel="stylesheet" href="position.css">
+    <link rel="stylesheet" href="bootswatchedited.css">
+    <link rel="stylesheet" href="styles.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script> 
+    <script src="bootstrap.js"></script> 
       <script type="text/javascript">
           $(document).ready(function () {
               // fade in content.
               $('#content-wrapper').fadeIn("slow");
           });
 </script>
- 
+ <script type="text/javascript">
+     (function () {
+         if (typeof window.janrain !== 'object') window.janrain = {};
+         if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
+
+         janrain.settings.tokenUrl = 'REPLACE_WITH_TOKEN_URL';
+
+         function isReady() { janrain.ready = true; };
+         if (document.addEventListener) {
+             document.addEventListener("DOMContentLoaded", isReady, false);
+         } else {
+             window.attachEvent('onload', isReady);
+         }
+
+         var e = document.createElement('script');
+         e.type = 'text/javascript';
+         e.id = 'janrainAuthWidget';
+
+         if (document.location.protocol === 'https:') {
+             e.src = 'https://rpxnow.com/js/lib/akash93/engage.js';
+         } else {
+             e.src = 'http://widget-cdn.rpxnow.com/js/lib/akash93/engage.js';
+         }
+
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(e, s);
+     })();
+</script>
 <style type="text/css">
  
 #content-wrapper
@@ -42,14 +69,7 @@
         <div class="row-fluid">
             <div class= "span9"> 
                 <div id="div2">    
-               <form  name="Register" method="POST">
-                    <h5> <input type="text" style="height:50" placeholder="Gmail id"/>
-                    <input type="Checkbox"/ id="remember"/> Remember Me </br> 
-                    <input type="password" style="height:50" placeholder="password" />
-                    <input type="Submit" class="btn-success" value="Sign In" />
-                    
-                    </h5>
-                </form>
+                
              </div>
            </div>
          </div>
