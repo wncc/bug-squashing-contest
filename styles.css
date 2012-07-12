@@ -4,14 +4,14 @@
       }
 #logo 
 {
-    position:relative;
-    left:-270px;
+    position:fixed;
+    left:50px;
 }
 #navbar 
 {
     position:relative;
-    left:-500px;
-    top:100px;
+    left:;
+    top:50px;
 }
 .header {
         height: 86px;
@@ -21,13 +21,13 @@
 #form 
 {
     position:relative;
-    left:500px;
-    top:-100px;
+    left:600px;
+    bottom:60px;
 }
 #About
 {
      position:relative;
-     top:80px;
+     top:60px;
      right:10px;
 }
 hr
