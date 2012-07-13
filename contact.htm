@@ -1,48 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title> Website Demo 2</title>
-    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootswatchedited.css">
-    <link rel="stylesheet" href="styles.css">
-     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="bootstrap.js"></script> 
-      <script type="text/javascript">
-          $(document).ready(function () {
-              // fade in content.
-              $('#content-wrapper').fadeIn("slow");
-          });
-</script>
- <script type="text/javascript">
-     (function () {
-         if (typeof window.janrain !== 'object') window.janrain = {};
-         if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
-
-         janrain.settings.tokenUrl = 'REPLACE_WITH_TOKEN_URL';
-
-         function isReady() { janrain.ready = true; };
-         if (document.addEventListener) {
-             document.addEventListener("DOMContentLoaded", isReady, false);
-         } else {
-             window.attachEvent('onload', isReady);
-         }
-
-         var e = document.createElement('script');
-         e.type = 'text/javascript';
-         e.id = 'janrainAuthWidget';
-
-         if (document.location.protocol === 'https:') {
-             e.src = 'https://rpxnow.com/js/lib/akash93/engage.js';
-         } else {
-             e.src = 'http://widget-cdn.rpxnow.com/js/lib/akash93/engage.js';
-         }
-
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(e, s);
-     })();
-</script>
-<style type="text/css">
+<head>
+   <meta charset="UTF-8">
+    <title>Test Page</title>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="bootswatchedited.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // fade in content.
+            $('#content-wrapper').fadeIn("slow");
+        });
+    </script>
+    <style type="text/css">
  
 #content-wrapper
 {
@@ -50,119 +22,50 @@
 }
  
 </style>
+</head>
 
-  </head>
-  <body>
-   <script type="text/javascript">
-<!--       //--><![CDATA[//><!--
-       document.write('<div id="content-wrapper">');
-       //--><!]]>
-</script>
-  <div id="div1">
-   <div class="well">
-        <div class="row-fluid">
-            <div class="span3">
-              <h1 align="center"> Contest Name</h1>
-            </div>
-        </div>
-      </div>
-      <div class= "container-fluid">
-        <div class="row-fluid">
-            <div class= "span9"> 
-                <div id="div2">    
-                <form  name="Register" method="POST">
-                   
-                </form>
-             </div>
-           </div>
-         </div>
-      </div>
-   </div>  
-   <div>
-    <div class="span3">
-        <ul class="nav nav-pills nav-stacked">
-            <li>
-                <a  data-toggle="pill" onclick="window.location.href='WebsiteDemo2.htm'"> <h3>Home </h3></a>
-            </li>
-            <li >
-                <a  data-toggle="pill" onclick="window.location.href='faq.html'"> <h3>FAQ</h3> </a>
-            </li>
-            <li class="active">
-                <a data-toggle="tab"> <h3> Contact Us </h3></a>
-            </li>
-        </ul>
-        
-    </div>
-   </div>
-   <div class="span12">
-    <div class="row-fluid" >
-        <div class="well">
-         <section id="About">
-            <div class="page-header">
-                <h1>Contact Details</h1>
-                <hr />
-            </div>
-            <h4>Akash Khan</br>
-                Email id: akashkhan25@gmail.com
-            </h4>
-            
-               
-         </section>
-        </div>
-    </div>
-   </div>
-    <section id="scoreboard">
-   <div >
-    <h2 align="center">Scoreboard</h2>
-    
-   <div class= "row">
-    <div class="span 3"
-        <div class="well" id="div4">
-            <ul class="nav nav-pills">
-            <li class="active"> <a href="#Overall" data-toggle="pill"><h3>Overall</h3></a></li>
-            <li> <a href="#Monthly" data-toggle="tab"><h3>Monthly</h3></a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="Overall">
-                 <ul class="nav nav-tabs nav-stacked" id="Overall">
-                    <table class="table">
-                        <li><thead><tr><th><h4>Rank</h4></th> <th> <h4>Username</h4></th> <th><h4>Issues Resolved</h4></th> </tr></thead></li>
-                    </table>
-                    <table class="table">
-                        <li> 
-                            <tr> <td>1</td> <td> <a href='#Profile1' data-toggle="tab" onclick="window.location='https://github.com'" > akash12</a></td> <td>5</td> </tr>
+<body>
+<div id="content-wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="span6" id="logo">
+                    <img src=bug-squasher.png height=150 width=150 />
+                </div>
+                <div class="span6" id="navbar">
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href=test2.html data-toggle="pill" rel="tab"><h3>Home</h3> </a>
                         </li>
-                        <li> 
-                            <tr> <td>2</td><td> <a href='#Profile2' data-toggle="tab" onclick="window.location='http://google.com'"> Bot</a></td> <td>3</td></tr></li>
-                    </table>
-                 </ul>
-                </div>
-                <div class="tab-pane" id="Monthly">
-                    <ul class="nav nav-tabs nav-stacked" id="Monthly">
-                        <table class="table">
-                            <li><thead><tr><th><h4>Rank</h4></th> <th> <h4>Username</h4></th> <th><h4>Issues Resolved</h4></th> </tr></thead></li>
-                        </table>
-                        <table class="table">
-                            <li> 
-                                <tr> <td>1</td> <td> <a href='#Profile1' data-toggle="tab" onclick="window.location='https://github.com'" > twit_bot</a></td> <td>2</td> </tr>
-                            </li>
-                            <li> 
-                                <tr> <td>2</td><td> <a href='#Profile2' data-toggle="tab" onclick="window.location='http://google.com'">Bot </a></td> <td>1</td></tr>
-                            </li>
-                        </table>
+                        <li> <a href="faq1.htm" data-toggle="tab" rel="tab"><h3>FAQ</h3></a></li>
+                        <li class="active"> <a href="contact1.htm" data-toggle="tab" rel="tab"><h3>Contact Us</h3></a></li>
+                        <li> <a href="score.htm" data-toggle="tab" rel="tab"><h3>Scoreboard</h3></a></li>
                     </ul>
+                    
+                    <div id="form">
+                        <form name="register" method="post">
+                            <input type="submit" class=" btn-large" value="Sign In with google"/>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </div> 
+    </div>
+    <div class="container">
+       <div class="span12" id="About">
+    <div class="row" >
+    <div class="well ">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <hr/>
+            </div>
+            <h3>Some Text Here </h3>
         </div>
     </div>
+    
    </div>
     </div>
-   </section>
-   <script type="text/javascript">
-<!--       //--><![CDATA[//><!--
-       document.write('</div><!-- content-wrapper -->');
-       //--><!]]>
-</script>
-  
-  </body>     
+
+</div>
+</body>
 </html>
