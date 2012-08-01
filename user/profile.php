@@ -1,4 +1,5 @@
 <?php
+include_once('config.php');
 function already_exists($res, $user) {
 	$num=mysql_num_rows($res);
 	$i=0;
@@ -12,21 +13,20 @@ function already_exists($res, $user) {
 }		 
 require_once '../src/apiClient.php';
 require_once '../src/contrib/apiOauth2Service.php';
-session_start();
 
 $client = new apiClient();
 $client->setApplicationName("Bug Squashing Contest");
 
  $client->setClientId('393220185541.apps.googleusercontent.com');
  $client->setClientSecret('11Rjxk_7d06dNDmXo_522d5_');
- $client->setRedirectUri('http://localhost/bug-squashing-contest/user/profile.php');
+ $client->setRedirectUri('http://wncc.stab-iitb.org/bug-squashing-contest/user/profile.php');
  $client->setDeveloperKey('AIzaSyAe5u9AyufN8BjitK8bSbTdTBRkDL38ZUw');
 $oauth2 = new apiOauth2Service($client);
 
-if (isset($_REQUEST['logout'])) {
+if (isset($_GET['logout'])) {
   unset($_SESSION['token']);
   $client->revokeToken();
-  header('Location : home.php');
+  header('Location: home.php');
 }
 
 if (isset($_GET['code'])) {
@@ -50,15 +50,15 @@ if ($client->getAccessToken()) {
   $authUrl = $client->createAuthUrl();
 }
 
-$link = mysql_connect("localhost","root");
+$link = mysql_connect("$DB_HOST","$DB_USER","$DB_PASSWORD");
 if (!$link)
   {
   die('Could not connect: ' . mysql_error());
   }
 
 // Select database
-mysql_select_db("data", $link);
-echo mysql_error($link) . "<br>"; 
+mysql_select_db("$DB_NAME", $link);
+echo mysql_error($link); 
 	
 	
 $id = $user["id"];
@@ -121,33 +121,11 @@ mysql_close();
 </head>
 
 <body>
-<div id="content-wrapper">
-    <div class="header">
-    		<div class="container">
-            <div class="row">
-                <div class="span6" id="logo">
-                    <img src='../bug-squasher.png' height=150 width=200 />
-         		 </div>
-          		 <div class="span8" id="navbar" style="float:right">
-                	<ul class="nav nav-pills" style="float:right">
-                   	<li><a href="home.php" data-toggle="pill" rel="tab"><h3>Home</h3> </a></li>
-                   	<li><a href="faq.php" data-toggle="tab" rel="tab"><h3>FAQ</h3></a></li>
-                   	<li><a href="contact.php" data-toggle="tab" rel="tab"><h3>Contact Us</h3></a></li>
-                   	<li><a href="score.php" data-toggle="tab" rel="tab"><h3>Scoreboard</h3></a></li>
-                   	<li class="active"><a href="profile.php" data-toggle="tab" rel="tab"><h3>Profile</h3></a></li>
-                
-						<li><form method = "post" action="?logout" class="span2">                
-                	<button type="submit" class="btn btn-danger btn-large" style="float:right">
-                		<h4>Sign Out</h4>
-                	</button>
-               </form></li>
-               </ul>
-            	</div>
-            </div>
-        </div> 
-    </div>
-    <div class="container">
-       <div class= "row span12 " id="About">
+	<div class="container">   
+            <?php $menukey=basename(__FILE__); include('header.php'); ?>
+
+    <div class="row">
+       <div class= "span12">
          <div class="well">
             <div class="page-header">
 					<?php 
@@ -186,7 +164,7 @@ mysql_close();
 						?>
             	</table>
            </div>
-           <form class="well" method="post" action="../admin/addBug.php" id ="addbug">
+           <form class="well" method="post" action="addBug.php" id ="addbug">
   					<input id = "io1" type="text" name="bugid" class="span3" placeholder="Bug Id">
   					<div class="input-prepend" id="io4">
   						<span id="io3" class="add-on">http://</span><input id = "io2" type="text" name="link" class="span3" placeholder="Link to Commit">
