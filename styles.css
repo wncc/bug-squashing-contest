@@ -6,17 +6,70 @@
       .sidebar-nav {
         padding: 9px 0;
       }
+#addbug{
+	background-color: #C8C8C8;	
+	}
+
+#label1{
+	height: 50px;	
+	}
+
 #logo 
 {
-    position:fixed;
-    left:50px;
+    position:relative;
+    left:0px;
+    width: 150px
+}
+
+#io1
+{
+height: 28px;	
+width: 150px;
+	}
+.hero {
+background: #F0F0F0;
+border-top: 3px solid #EBEBEB;
+border-bottom: 1px solid #E1E1E1;
+margin-bottom: 30px;
+padding: 30px 0 31px;
+float:center;
+}
+
+#hero-box{
+position:relative;
+top:50px;
+left:200px;
+}
+#io2
+{
+height: 28px;
+width : 300px;	}	
+
+#row1 {
+margin-bottom : 10px;
+}
+
+#body {
+position :relative;
+top:50px;
 }
 #navbar 
 {
     position:relative;
-    left:;
+    left:1px;
     top:50px;
 }
+#signout 
+{
+    position:relative;
+    top:50px;
+}
+
+#signout-button {
+	position: relative;
+	left: 190px;
+}
+
 .header {
         height: 86px;
         width:100%;
@@ -31,8 +84,8 @@
 #About
 {
      position:relative;
-     top:60px;
-     right:10px;
+     top:50px;
+     right:0px;
 }
 hr
 {
@@ -46,4 +99,30 @@ hr
     position:relative;
     top:70px;
     right:10px;
+}
+
+#login-modal 
+{
+width : 300px;
+}
+
+#login-modal h1
+{
+margin : 0 -40px;
+background: #EEE;
+border-bottom: 1px solid #CCC;
+border-top: 1px solid #CCC;
+font-size: 16px;
+padding: 5px 40px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+#login-modal fieldset input[type="text"] {
+font-size: 14px;
+color: black;
+padding: 10px 10px;
+width: 280px;
+box-shadow: inset 0 1px 1px #ddd;
+margin-top: 10px;
 }
