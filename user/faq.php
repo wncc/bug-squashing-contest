@@ -102,7 +102,7 @@
             			</div>
             			<div class='span12'>
             				<div class='span1'>
-									<?php echo "<div style='margin:15px; background: url('".$qmark."');height:50px;width:50px'></div>";?><div style="margin:15px; background: url('qmark.jpg');height:50px;width:50px"></div>            
+									<?php echo "<div style='margin:15px; background: url('".$qmark."');height:50px;width:50px'></div>";?>            
             				</div>
             				<div class="span10" style="margin:15px">
 									<h3>Can you show me an example</h3>
@@ -113,7 +113,7 @@
             			</div>
             			<div class='span12'>
             				<div class='span1'>
-									<?php echo "<div style='margin:15px; background: url('".$qmark."');height:50px;width:50px'></div>";?><div style="margin:15px; background: url('qmark.jpg');height:50px;width:50px"></div>            
+									<?php echo "<div style='margin:15px; background: url('".$qmark."');height:50px;width:50px'></div>";?>           
             				</div>
             				<div class="span10" style="margin:15px">
 									<h3>Can you suggest some popular Open Source Sites?</h3>
