@@ -52,41 +52,46 @@
             				is software whose source code is published and made available to the public, 
             				enabling anyone to copy, modify and redistribute the source code .Most of the OSS rely on community developers ,
             				people like us to work on and contribute to the project. The sole purpose of this purpose of this contest is to 
-            				get students involved into open source communities .
+            				get students involved into open source communities,helping us make software we love even better.
             			</h4>
             		</p><br>
-            		<h3>Some things in for you!!</h3>
+            		<h3>I am a really busy sophie/thirdie/fourthie! Why should I do this?</h3>
             		<div class = 'row'>
-            			<div class='span6'>
+            			<div class='span9'>
             				<div class='span1'>
 									<div style="margin:15px; background: url('icons.png');background-position:0 0; height:50px; width:50px"></div>            
             				</div>
-            				<div class="span5" style="margin:15px">
-									<h3>Coding Standards</h3>
-									<h4>The code quality standards in open source software is high. At the end the way you code would .. 
-										well try it for yourself.
+            				<div class="span7" style="margin:15px">
+									<h3>Thrill</h3>
+									<h4>Unlike your CS101 project which now has umm ... zero active users, this is 
+									real world software we are talking about. If your patches get accepted, potentially 
+									millions of users can benefit from your fix. If that doesn't excite you, I am not sure if you are on the right page currently.
 									</h4>
             				</div>
             			</div>
-            			<div class='span6'>
+            			<div class='span9'>
             				<div class='span1'>
 									<div style="margin:15px; background: url('icons.png');background-position:-50px 0; height:50px; width:50px"></div>            
             				</div>
-            				<div class="span5" style="margin:15px">
-									<h3>Lots of fun</h3>
+            				<div class="span7" style="margin:15px">
+									<h3>Knowledge</h3>
 									<h4>
-									It is fun working on bugs and being a part of community. Get into IRC, meet new people its all there 									
+									Learn from the uber hackers. Straight from the source. Talk with the maintainers on 
+									IRC and participate in the community. Learn some really cool tricks from some of 
+									the smartest guys around. 									
 									</h4>
             				</div>
             			</div>
-            			<div class='span6'>
+            			<div class='span9'>
             				<div class='span1'>
 									<div style="margin:15px; background: url('icons.png');background-position:-200px 0; height:50px; width:50px"></div>            
             				</div>
-            				<div class="span5" style="margin:15px">
+            				<div class="span7" style="margin:15px">
 									<h3>Glory</h3>
 									<h4>
-									Fixing bugs serves as a gateway to get into programs like Google Summer of Code.  									
+									Bragging rights! Be known as the guy who added proxy support to bunch of cool 
+									apps and defeated ye olde Netmon. Who knows along the way someone may like you
+									enough to pick for the next Google Summer of Code.  									
 									</h4>
             				</div>
             			</div>
