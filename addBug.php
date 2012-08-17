@@ -24,13 +24,15 @@ if(isset($_POST)) {
 			  			$addBugResult = mysql_query($addBugQuery, $link);
 			  			echo mysql_error($link);
 		  			
-		  				/*$updatePeopleQuery = "UPDATE People SET NBugs = NBugs+1 WHERE PersonId = '".$_POST["id"]."'";
+		  				/*
+						$updatePeopleQuery = "UPDATE People SET NBugs = NBugs+1 WHERE PersonId = '".$_POST["id"]."'";
 		  				mysql_query($updatePeopleQuery);
-		  				echo mysql_error($link);*/
+		  				echo mysql_error($link);
+						*/
 		  			}
 		  		}
 		}
-	//} 
-	//echo "added";
+} 
+
 header('Location: profile.php');
 ?>

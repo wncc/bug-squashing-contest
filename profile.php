@@ -19,7 +19,7 @@ $client->setApplicationName("Bug Squashing Contest");
 
  $client->setClientId('393220185541.apps.googleusercontent.com');
  $client->setClientSecret('11Rjxk_7d06dNDmXo_522d5_');
- $client->setRedirectUri('http://wncc.stab-iitb.org/bug-squashing-contest/user/profile.php');
+ $client->setRedirectUri('http://wncc.stab-iitb.org/bug-squasher/profile.php');
  $client->setDeveloperKey('AIzaSyAe5u9AyufN8BjitK8bSbTdTBRkDL38ZUw');
 $oauth2 = new apiOauth2Service($client);
 
@@ -103,10 +103,9 @@ mysql_close();
   <title>Bug Squashing Party 2k12-13</title>
   <meta name= "viewport" content="width=device-width, initial-scale=1.0"/>
   
-  <link href="../bootswatchedited.css" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="../js/bootstrap.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <link href="../styles.css" rel="stylesheet" type="text/css" />
+  	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
    <script type="text/javascript">
       $(document).ready(function () {
          // fade in content.

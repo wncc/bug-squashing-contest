@@ -36,10 +36,9 @@ if(!$monthlyResult2) {
    <title>Bug Squashing Party 2k12-13</title>
    <meta name= "viewport" content="width=device-width, initial-scale=1.0"/>
    <meta http-equiv="Content-Type" content="text/html"/>
-  	<link href="../bootswatchedited.css" rel="stylesheet" type="text/css"/>
-  	<script type="text/javascript" src="../js/bootstrap.js"></script>
+  	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
   	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  	<link href="../styles.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
    <script type="text/javascript">
       $(document).ready(function () {
          // fade in content.
