@@ -11,8 +11,8 @@ function already_exists($res, $user) {
 	}
 	return false;
 }		 
-require_once '../src/apiClient.php';
-require_once '../src/contrib/apiOauth2Service.php';
+require_once 'src/apiClient.php';
+require_once 'src/contrib/apiOauth2Service.php';
 
 $client = new apiClient();
 $client->setApplicationName("Bug Squashing Contest");

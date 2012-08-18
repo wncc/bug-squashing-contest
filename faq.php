@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include_once('config.php');
 ?>
 
@@ -20,15 +20,15 @@
    </script>
    <style type="text/css">
 		#content-wrapper {
-  			display:none;	
+  			display:none;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="container">
-            <?php $menukey=basename(__FILE__); include('header.php'); 
-				            
+            <?php $menukey=basename(__FILE__); include('header.php');
+
             ?>
 		<div class="row">
        <div class="span12">
@@ -41,12 +41,12 @@
             <div class = 'row'>
             			<div class='span12'>
             				<div class='span1'>
-									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>           
+									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>
             				</div>
             				<div class="span10" style="margin:15px">
 									<h3>Q. What is a BUG ??</h3>
-									<h4>A bug is a common term used to describe a flaw, mistake, failure or fault in a 
-									computer program or system. Most bugs are caused from mistakes made by people in 
+									<h4>A bug is a common term used to describe a flaw, mistake, failure or fault in a
+									computer program or system. Most bugs are caused from mistakes made by people in
 									either the source code or design. For the purpose of the contest feature additions are also considered.
 									</h4>
             				</div>
@@ -58,44 +58,9 @@
             				<div class="span10" style="margin:15px">
 									<h3>Q. Where to find the source code?</h3>
 									<h4>
-									Most open source software host their code reponsitory in a version control system like Hg, Git or Svn. The link to repository can usually be found in the organisation homepage or via simple web search. <br/>Eg: Source code for chrome: <a href='http://code.google.com/p/chromium/'>Google Chrome</a>, source of VLC media player : <a href='http://www.videolan.org/vlc/download-sources.html'>VLC Media Player </a> 
+									Most open source software host their code reponsitory in a version control system like Hg, Git or Svn. The link to repository can usually be found in the organisation homepage or via simple web search. <br/>Eg: Source code for chrome: <a href='http://code.google.com/p/chromium/'>Google Chrome</a>, source of VLC media player : <a href='http://www.videolan.org/vlc/download-sources.html'>VLC Media Player </a>
 									</h4>
             				</div>
-            			</div>
-            			<div class='span12'>
-            				<div class='span1'>
-									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>            
-            				</div>
-            				<div class="span10" style="margin:15px">
-									<h3>Q. How do I get started?</h3>
-									<h4>
-									Steps : <br>
-									<ol>
-									<li> Choose a software you wish to get involved with .</li>
-									<li>
-									Check out the bug tracker and choose a bug you want to work on									
-									</li>
-									<li>									
-									Clone the repo ur focusing on <br>
-										<a href='http://www.youtube.com/watch?v=gAWiXbT599E'>Git Setup Tutorial</a><br>
-										<a href='http://www.youtube.com/watch?v=x1BuYsRIdXc'>Mercurial tutorial</a>
-									</li>
-									<li>
-									 Familiarise yourself with the code. Most open source software have dedicated developer 
-									 forums. Subscribe to their mailing lists to get an idea of whats happening and start 
-									 interacting with other developers For example :  <a href='http://www.videolan.org/support/lists.html'> VLC Support </a>									
-									</li>
-									<li>
-									Start working on the bug									
-									</li>
-									<li>
-									Once resolved push it on the local repo send a pull request to the admin									
-									</li>
-									<li>
-									Admin reviews the code and incorporates it in the next version or patch									
-									</li>
-								</h4>
-            				</div>            				
             			</div>
             			<div class='span12'>
             				<div class='span1'>
@@ -110,18 +75,53 @@
             			</div>
             			<div class='span12'>
             				<div class='span1'>
-									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>            
+									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>
+            				</div>
+            				<div class="span10" style="margin:15px">
+									<h3>Q. How do I get started?</h3>
+									<h4>
+									Steps : <br>
+									<ol>
+									<li> Choose a software you wish to get involved with .</li>
+									<li>
+									Check out the bug tracker and choose a bug you want to work on
+									</li>
+									<li>
+									Clone the repo ur focusing on <br>
+										<a href='http://www.youtube.com/watch?v=gAWiXbT599E'>Git Setup Tutorial</a><br>
+										<a href='http://www.youtube.com/watch?v=x1BuYsRIdXc'>Mercurial tutorial</a>
+									</li>
+									<li>
+									 Familiarise yourself with the code. Most open source software have dedicated developer
+									 forums. Subscribe to their mailing lists to get an idea of whats happening and start
+									 interacting with other developers For example :  <a href='http://www.videolan.org/support/lists.html'> VLC Support </a>
+									</li>
+									<li>
+									Start working on the bug
+									</li>
+									<li>
+									Once resolved push it on the local repo send a pull request to the admin
+									</li>
+									<li>
+									Admin reviews the code and incorporates it in the next version or patch
+									</li>
+								</h4>
+            				</div>
+            			</div>
+            			<div class='span12'>
+            				<div class='span1'>
+									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>
             				</div>
             				<div class="span10" style="margin:15px">
 									<h3>Q. Can you show me an example</h3>
 									<h4>
-									Here's one : <a href='https://github.com/twitter/bootstrap/issues/885'>Example</a> 
+									<a href='http://programmers.stackexchange.com/questions/91237/how-to-start-fixing-bugs-in-open-source-softwares'>Here's One</a>
 									</h4>
             				</div>
             			</div>
             			<div class='span12'>
             				<div class='span1'>
-									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>           
+									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>
             				</div>
             				<div class="span10" style="margin:15px">
 									<h3>Q. Can you suggest some popular Open Source Sites?</h3>
@@ -129,29 +129,40 @@
 									<ul>
 									 <li><a href='http://bugzilla.mozilla.org/'>Mozilla</a></li>
 									 <li><a href='https://github.com/twitter/bootstrap/'>Twitter Bootstrap</a></li>
+									 <li><a href='http://www.blender.org/community/get-involved/'>Blender</a></li>
+									 <li><a href='http://www.gimp.org/develop/'>GIMP</a></li>
+									 <li><a href='http://moodle.org/development/'>Moodle</a></li>
+									 <li><a href='http://drupal.org/getting-involved/'>Drupal</a></li>
+									 <li><a href='http://codex.wordpress.org/Contributing_to_WordPress'>Wordpress</a></li>
+									 <li><a href='http://www.joomla.org/about-joomla/contribute-to-joomla.html'>Joomla</a></li>
+									 <li><a href='https://issues.apache.org/jira/secure/IssueNavigator!executeAdvanced.jspa?jqlQuery=labels+=+gsoc2012&runQuery=true&clear=true'>Apache (ASF)</a></li>
+									 <li><a href='http://debian.stevenrosenberg.net/index.php/2011/06/27/want-to-get-involved-in-debian-raphael-hertzog-needs-your-help/'>Debian</a></li>
+									 <li><a href='http://www.phpmyadmin.net/home_page/improve.php'>PhpMyAdmin</a></li>
+									 <li><a href='http://docs.python.org/devguide/'>Python</a></li>
 									 <li><a href='http://code.google.com/p/cyanogenmod/'>cyanogenmod</a></li>
+									 <li><a href='http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012'>Lots More !!</a></li>
 									</h4>
 									</ul>
             				</div>
             			</div>
             			<div class='span12'>
             				<div class='span1'>
-									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>            
+									<?php echo "<div style='margin:15px; height:50px;width:50px'></div>";?>
             				</div>
             				<div class="span10" style="margin:15px">
 									<h3>Q. I need some more insight into this!!</h3>
 									<h4>
-									<ul>									
+									<ul>
 									<li><a href='http://www.kegel.com/academy/opensource.html'>Go Here</a></li>
 									<li><a href='http://www.freenode.net/'>Discussion Forum</a></li>
-									</ul> 
+									</ul>
 									</h4>
             				</div>
             			</div>
             </div>
         </div>
     </div>
-    
+
    </div>
     </div>
 
