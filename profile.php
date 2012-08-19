@@ -164,7 +164,6 @@ mysql_close();
             	</table>
            </div>
            <form class="well" method="post" action="addBug.php" id ="addbug">
-  					<input id = "io1" type="text" name="bugid" class="span3" placeholder="Bug Id">
   					<div class="input-prepend" id="io4">
   						<span id="io3" class="add-on">http://</span><input id = "io2" type="text" name="link" class="span3" placeholder="Link to Commit">
   					</div>
