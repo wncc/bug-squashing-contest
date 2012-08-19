@@ -13,14 +13,13 @@ echo mysql_error($link);
 
 
 if(isset($_POST)) {
-				if(!($_POST['link']=='' || $_POST['bugid']=='')) {	
-					$chkQuery = "SELECT * FROM Bugs WHERE PersonId = '".$_POST["id"]."' AND BugsId ='".$_POST["bugid"]."' AND Link='".$_POST["link"]."'"; 				
-					$chkResult = mysql_query($chkQuery, $link);
-					echo mysql_error($link);				
-					
-					if(mysql_num_rows($chkResult)==0) {					  		
+				if(!($_POST['link']=='')) {					
+					$countQuery= "SELECT count(*) FROM Bugs";
+					$countResult = mysql_query($countQuery,$link);
+					echo mysql_error($link);
+					$bugid = mysql_num_rows($countResult)+1;				  		
 		  				$addBugQuery = "INSERT INTO Bugs (BugsId, PersonId, Link, Time, Review) VALUES ('" 
-			  					. $_POST["bugid"] . "','" . $_POST["id"] . "','".$_POST["link"]."','" . date('y-m-d H:i:s')."','notreviewed')";
+			  					. $bugid . "','" . $_POST["id"] . "','".$_POST["link"]."','" . date('y-m-d H:i:s')."','notreviewed')";
 			  			$addBugResult = mysql_query($addBugQuery, $link);
 			  			echo mysql_error($link);
 		  			
@@ -29,9 +28,7 @@ if(isset($_POST)) {
 		  				mysql_query($updatePeopleQuery);
 		  				echo mysql_error($link);
 						*/
-		  			}
 		  		}
-		}
 } 
 
 header('Location: profile.php');
