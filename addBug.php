@@ -14,7 +14,7 @@ echo mysql_error($link);
 
 if(isset($_POST)) {
 				if(!($_POST['link']=='')) {					
-					$countQuery= "SELECT count(*) FROM Bugs";
+					$countQuery= "SELECT * FROM Bugs";
 					$countResult = mysql_query($countQuery,$link);
 					echo mysql_error($link);
 					$bugid = mysql_num_rows($countResult)+1;				  		
