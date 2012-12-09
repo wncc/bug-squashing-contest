@@ -1,8 +1,8 @@
 <?php
-$DB_HOST="stabiitb.db.9469207.hostedresource.com";
-$DB_USER="stabiitb";
-$DB_PASSWORD="Stab-2012";
-$DB_NAME="stabiitb";
+$DB_HOST="";
+$DB_USER="";
+$DB_PASSWORD="";
+$DB_NAME="";
 session_start();
 
 ?>
